@@ -11,7 +11,7 @@ import seaborn as sns
 
 st.title("Webb Klasterisasi Pengunjung Mall\nKlastering dengan K-Means\n")
 
-df = pd.read_csv('dataset-klastering.csv')
+df = pd.read_csv('data-mall.csv')
 
 df.rename(index=str, columns={
     'Annual Income (k$)' : 'Income',
@@ -40,10 +40,10 @@ ax.set_ylabel('inertia')
 
 st.header("Pencarian Elbow")
 #panah elbow
-ax.annotate('Possible elbow point', xy=(3, 140000), xytext=(3, 50000), xycoords='data',
+ax.annotate('Possible elbow point', xy=(3, 1900000), xytext=(3, 50000), xycoords='data',
             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 
-ax.annotate('Possible elbow point', xy=(5, 80000), xytext=(2, 150000), xycoords='data',
+ax.annotate('Possible elbow point', xy=(5, 80000), xytext=(2, 2500000), xycoords='data',
             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 
 #menampilkan panah elbow di streamlit
