@@ -9,9 +9,9 @@ import seaborn as sns
 
 
 
-st.title("Webb Apps Untuk Klastering dengan K-Means\n")
+st.title("Webb Apps\nKlasterisasi Pengunjung Mall\nKlastering dengan K-Means\n")
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('dataset-klastering.csv')
 
 df.rename(index=str, columns={
     'Annual Income (k$)' : 'Income',
