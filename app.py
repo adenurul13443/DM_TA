@@ -38,12 +38,12 @@ ax.set_title('pencarian elbow')
 ax.set_xlabel('cluster')
 ax.set_ylabel('inertia')
 
-#panah elbow
-ax.annotate('Possible elbow point', xy=(3, 140000), xytext=(3, 50000), xycoords='data',
-            arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
+# #panah elbow
+# ax.annotate('Possible elbow point', xy=(3, 140000), xytext=(3, 50000), xycoords='data',
+#             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 
-ax.annotate('Possible elbow point', xy=(5, 80000), xytext=(2, 150000), xycoords='data',
-            arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
+# ax.annotate('Possible elbow point', xy=(5, 80000), xytext=(2, 150000), xycoords='data',
+#             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 
 #menampilkan panah elbow di streamlit
 st.set_option('deprecation.showPyplotGlobalUse', False)
