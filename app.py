@@ -22,7 +22,7 @@ X = df.drop(['CustomerID', 'Gender'], axis=1)
 
 print(X)
 
-st.header("isi dataset")
+st.header("Isi Dataset")
 st.write(X)
 
 #menampilkan elbow
@@ -38,6 +38,7 @@ ax.set_title('pencarian elbow')
 ax.set_xlabel('cluster')
 ax.set_ylabel('inertia')
 
+st.header("Pencarian Elbow")
 #panah elbow
 ax.annotate('Possible elbow point', xy=(3, 140000), xytext=(3, 50000), xycoords='data',
             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
@@ -49,7 +50,7 @@ ax.annotate('Possible elbow point', xy=(5, 80000), xytext=(2, 150000), xycoords=
 st.set_option('deprecation.showPyplotGlobalUse', False)
 elbo_plot = st.pyplot()
 
-#membuat side bar untuk menentukan nilai k klastering
+#membuat side bar slider untuk menentukan nilai k klastering
 st.sidebar.subheader('Nilai jumlah k')
 clust = st.sidebar.slider("Pilih Jumlah Klaster (k) : ", 2,10,3,1)
 
@@ -74,6 +75,8 @@ def k_means(n_clust):
 #menampilkan di streamlit
     st.header('Cluster Plot')
     st.pyplot()
+
+    st.header("Hasil Klastering")
     st.write(X)
 
 #yg diambil dari slider
