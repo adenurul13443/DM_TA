@@ -51,7 +51,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 elbo_plot = st.pyplot()
 
 #membuat side bar slider untuk menentukan nilai k klastering
-st.sidebar.subheader('Nilai jumlah k')
+st.sidebar.subheader('Menentukan Nilai k')
 clust = st.sidebar.slider("Pilih Jumlah Klaster (k) : ", 2,10,3,1)
 
 #fungsi menentukan nilai k klastering
